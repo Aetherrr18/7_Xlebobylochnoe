@@ -1,0 +1,16 @@
+D:\VS\7_CheckSnils\bin\Debug\7_CheckSnils.exe.config
+D:\VS\7_CheckSnils\bin\Debug\7_CheckSnils.exe
+D:\VS\7_CheckSnils\bin\Debug\7_CheckSnils.pdb
+D:\VS\7_CheckSnils\obj\Debug\7_CheckSnils.csproj.AssemblyReference.cache
+D:\VS\7_CheckSnils\obj\Debug\7_CheckSnils.csproj.SuggestedBindingRedirects.cache
+D:\VS\7_CheckSnils\obj\Debug\ValidDate.g.cs
+D:\VS\7_CheckSnils\obj\Debug\App.g.cs
+D:\VS\7_CheckSnils\obj\Debug\7_CheckSnils_MarkupCompile.cache
+D:\VS\7_CheckSnils\obj\Debug\7_CheckSnils_MarkupCompile.lref
+D:\VS\7_CheckSnils\obj\Debug\ValidDate.baml
+D:\VS\7_CheckSnils\obj\Debug\7_CheckSnils.g.resources
+D:\VS\7_CheckSnils\obj\Debug\_7_CheckSnils.Properties.Resources.resources
+D:\VS\7_CheckSnils\obj\Debug\7_CheckSnils.csproj.GenerateResource.cache
+D:\VS\7_CheckSnils\obj\Debug\7_CheckSnils.csproj.CoreCompileInputs.cache
+D:\VS\7_CheckSnils\obj\Debug\7_CheckSnils.exe
+D:\VS\7_CheckSnils\obj\Debug\7_CheckSnils.pdb
