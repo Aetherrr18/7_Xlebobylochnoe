@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A72D73F-0204-4315-A26C-62E2165F7213}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_7_Xlebobylochnoe</RootNamespace>
+    <AssemblyName>7_Xlebobylochnoe</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AdminWindow\WindowAddEditUser.xaml.cs">
+      <DependentUpon>WindowAddEditUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\Company.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\CustomerOrder.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\Material.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\MaterialCategory.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\OrderLine.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\Price.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\Product.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\ProductCategory.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\Production.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\ProductionMaterial.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\ProductionProduct.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\role.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\Specification.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\SpecificationMaterial.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\sysdiagrams.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\Unit.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\users.cs">
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorizationWindow\WindowAuthorization.xaml.cs">
+      <DependentUpon>WindowAuthorization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\XlebobylochnoeDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XlebobylochnoeDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\XlebobylochnoeDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XlebobylochnoeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationDateBase\XlebobylochnoeDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XlebobylochnoeDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="UserWindow\WindowUser.xaml.cs">
+      <DependentUpon>WindowUser.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AdminWindow\WindowAddEditUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminWindow\WindowAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AuthorizationWindow\WindowAuthorization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="AdminWindow\WindowAdmin.xaml.cs">
+      <DependentUpon>WindowAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplicationDateBase\AppConnect.cs" />
+    <Page Include="UserWindow\WindowUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="ApplicationDateBase\XlebobylochnoeDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>XlebobylochnoeDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ApplicationDateBase\XlebobylochnoeDB.edmx.diagram">
+      <DependentUpon>XlebobylochnoeDB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\1.png" />
+    <Resource Include="Resource\2.png" />
+    <Resource Include="Resource\3.png" />
+    <Resource Include="Resource\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationDateBase\XlebobylochnoeDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>XlebobylochnoeDB.Context.cs</LastGenOutput>
+      <DependentUpon>XlebobylochnoeDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="ApplicationDateBase\XlebobylochnoeDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>XlebobylochnoeDB.edmx</DependentUpon>
+      <LastGenOutput>XlebobylochnoeDB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
